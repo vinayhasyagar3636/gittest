@@ -223,7 +223,7 @@ int main()
 				return 0;
 			}
 		}
-
+	printf("1st commit\n");
 	return 0;
 }
 
