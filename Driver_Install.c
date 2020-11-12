@@ -226,6 +226,7 @@ int main()
 	printf("1st commit\n");
 	printf("commit from the git website\n");
 	printf("enhancement commit\n");
+	printf("enhancement commit2\n");
 	return 0;
 }
 
