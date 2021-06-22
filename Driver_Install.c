@@ -232,6 +232,7 @@ int main()
 	printf("enhancement commit5\n");
 		printf("enhancement commit6\n");
 	printf("master\n");
+	printf("merge\n");
 	return 0;
 }
 
