@@ -73,7 +73,7 @@ int main()
 	BOOL reboot = FALSE;
 	DWORD flags = 0;
 	HMODULE newdevMod = NULL;
-	unsigned short  Buffer2[4096] = { 0 };
+	unsigned short  Buffer2[4094] = { 0 };
 	unsigned int PortNumber;
 	printf("Enter port number\n");
 	scanf_s("%d", &PortNumber);
@@ -215,7 +215,7 @@ int main()
 
 		printf("installed\n");
 		ReleasePorts(PHComDB, Buffer2);
-		memset(Buffer2, 0, 4096);
+		memset(Buffer2, 0, 4094);
 		if (PHComDB != HCOMDB_INVALID_HANDLE_VALUE)
 		{
 			if (ComDBClose(PHComDB))
@@ -225,7 +225,7 @@ int main()
 		}
 	printf("1st commit\n");
 	printf("commit from the git website\n");
-	printf("enhancement commit\n");
+	printf("enhancementttt commit\n");
 	printf("enhancement commit2\n");
 	printf("enhancement commit2\n");
 	printf("enhancement commit4\n");
