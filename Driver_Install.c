@@ -73,7 +73,7 @@ int main()
 	BOOL reboot = FALSE;
 	DWORD flags = 0;
 	HMODULE newdevMod = NULL;
-	unsigned short  Buffer2[4094] = { 0 };
+	unsigned short  Buffer2[4096] = { 0 };
 	unsigned int PortNumber;
 	printf("Enter port number\n");
 	scanf_s("%d", &PortNumber);
@@ -225,8 +225,8 @@ int main()
 		}
 	printf("1st commit\n");
 	printf("commit from the git website\n");
-	printf("enhancementttt commit\n");
-	printf("enhancement commit2\n");
+	printf("enhancement commit\n");
+	printf("enhancementtt commit2\n");
 	printf("enhancement commit2\n");
 	printf("enhancement commit4\n");
 	printf("enhancement commit5\n");
