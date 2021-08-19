@@ -1,0 +1,13 @@
+https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage
+mkdir build
+cd build
+if cmake fails in find_package of some of the libraries, then set the flag DCMAKE_PREFIX_PATH to where the libraries are present
+
+
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="-Wno-error=old-style-cast" -DCMAKE_PREFIX_PATH=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib -DCMAKE_INSTALL_PREFIX=/home/vinay/Buckman/azure-sdk-for-cpp/sdk/lib  -DCURL_INCLUDE_DIR=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/include/curl -DOPENSSL_ROOT_DIR=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/include/openssl -DCURL_LIBRARY=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/lib/libcurl.a -DOPENSSL_CRYPTO_LIBRARY=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/lib/libcrypto.a -DLIBXML2_LIBRARY=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/libxml2.so.2.9.4
+
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DBUILD_SHARED_LIBS=ON  -DCMAKE_CXX_FLAGS="-Wno-error=old-style-cast" -DCMAKE_PREFIX_PATH=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib -DCMAKE_INSTALL_PREFIX=/home/vinay/Buckman/azure-sdk-for-cpp/sdk/lib  -DCURL_INCLUDE_DIR=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/include/curl -DOPENSSL_ROOT_DIR=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/include/openssl -DCURL_LIBRARY=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/lib/libcurl.a -DOPENSSL_CRYPTO_LIBRARY=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/lib/libcrypto.a -DLIBXML2_LIBRARY=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/libxml2.so.2.9.4
+
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DBUILD_SHARED_LIBS=ON  -DCMAKE_CXX_FLAGS="-Wno-error=old-style-cast" -DCMAKE_PREFIX_PATH=/opt/poky/2.2.2/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib -DCMAKE_INSTALL_PREFIX=/home/vinay/Buckman/azure-sdk-for-cpp/sdk/lib
+
+cmake --build .
